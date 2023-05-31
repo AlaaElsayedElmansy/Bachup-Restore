@@ -23,6 +23,7 @@ Here two bash scripts we can use them if we need to make secure backup to our sy
   ```bash
      git clone https://github.com/AlaaElsayedElmansy/Bachup-Restore
   ``` 
+  ![Alt text]( C:\Users\MicroTeck\OneDrive\Pictures\Screenshots\2023-05-31 (7).png )
  - Excute scripts
  ```bash
     chmod +x backup.sh
