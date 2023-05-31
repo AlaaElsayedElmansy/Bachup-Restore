@@ -24,7 +24,8 @@ Here two bash scripts we can use them if we need to make secure backup to our sy
   ```bash
      git clone https://github.com/AlaaElsayedElmansy/Bachup-Restore
   ``` 
-  ![2023-05-31 (6)](https://github.com/AlaaElsayedElmansy/Bachup-Restore/assets/112073221/21b8ddda-7848-4d02-8456-d0d77ec01a8b)
+  ![2023-05-31 (7)](https://github.com/AlaaElsayedElmansy/Bachup-Restore/assets/112073221/79243975-cca1-4437-aaad-a8ee6bb5c8bd)
+
  - Excute scripts
  ```bash
     chmod +x backup.sh
@@ -44,6 +45,7 @@ you need to make sure that you have 4 paramters:
 ```bash
     . backup.sh /path to the source /path to backup to "key" "days"
 ``` 
+![2023-05-31 (12)](https://github.com/AlaaElsayedElmansy/Bachup-Restore/assets/112073221/6e02c118-6eb0-46c8-b7fe-ca5edda86423)
 ## Run restore.sh
 - Before Run
 ```bash
@@ -56,6 +58,8 @@ you need to make sure that you have 3 paramters:
  ```bash
     . restore.sh /source path /destintion path "the same key of backup"
  ``` 
+ ![2023-05-31 (8)](https://github.com/AlaaElsayedElmansy/Bachup-Restore/assets/112073221/7820ff03-63b2-473d-9486-c041516e4a57)
+
 # Copying to remote server
 - Preparing source server and destination server
 You can follow this steps in the link below
@@ -68,6 +72,9 @@ https://blog.microideation.com/2016/05/26/secure-copy-files-scp-between-two-ec2-
 scp -i ~/main.pem $dest/$now.tar.gz.gpg @username:/home/ubuntu/data
 ```
 - Run bach.sh again !!
+![2023-05-31 (10)](https://github.com/AlaaElsayedElmansy/Bachup-Restore/assets/112073221/a9a7b27e-8c09-4b80-aa3e-0f79108415b4)
+![2023-05-31 (9)](https://github.com/AlaaElsayedElmansy/Bachup-Restore/assets/112073221/c7b4fcc3-0aa0-448a-8a47-9b386bcc0ac8)
+
 
 
 
