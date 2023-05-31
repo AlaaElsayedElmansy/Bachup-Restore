@@ -127,7 +127,7 @@ for dir in *; do
         echo "$key" | gpg -c --batch --yes --passphrase-fd 0 $now.tgz
         rm -rf $now.tgz
 
-#        scp -i ~/main.pem $dest/$now.tar.gz.gpg ubuntu@ip-172-31-31-82:/home/ubuntu/data
+        #scp -i ~/main.pem $dest/$now.tgz.gpg ubuntu@ip-172-31-31-82:/home/ubuntu/data
 
 
 
