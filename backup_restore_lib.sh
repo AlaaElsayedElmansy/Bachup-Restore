@@ -16,7 +16,7 @@ then
         else 
         echo "Enter vaild input" 
         echo "Enter the directory to be backed up!!" 
-        return 
+        exit 1 
         fi 
         if [  -d $des ] 
         then 
@@ -24,14 +24,14 @@ then
         else 
         echo "enter vaild input" 
         echo "Enter the directory which should store the backup!!" 
-        return 
+        exit 1 
         fi 
         if [[  $day =~ ^[0-9]+$ ]] 
         then 
                 echo "you entered right input" 
         else 
                 echo "you entered wrong input of days must be numbers!!" 
-                return 
+                exit 1 
         fi
 else 
         echo "This is the file of back up"
@@ -49,7 +49,8 @@ echo "We need 4 parameters from you
 echo "**********************************************************" 
 echo "Try again !!" 
 
-        return
+        exit 1
+
 fi 
 } 
 
